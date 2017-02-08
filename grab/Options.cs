@@ -10,7 +10,7 @@ namespace grab
 {
     class Options
     {
-        [Option('c',"collection",Required = true)]
+        [Option('c',"collection")]
         public string collection { get; set; }
 
         [Option('a',"apikey", Required = true)]
@@ -18,5 +18,8 @@ namespace grab
 
         [Option('p',"path", Required = true)]
         public string outputPath { get; set; }
+
+        [Option('e',"environment")]
+        public string envName { get; set; }
     }
 }
