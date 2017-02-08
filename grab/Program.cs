@@ -66,7 +66,6 @@ namespace grab
 
         private static void getEnvironmentTemplate(Options options)
         {
-            //TigerEyeTest_Shared.postman_environment.json
             var grabEnvTemplate = options.envName;
             var fileName = options.envName + ".postman_environment.json";
             if (!options.outputPath.EndsWith(@"\"))
